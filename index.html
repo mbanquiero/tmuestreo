@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Teorema de Nyquist - Demostración Visual</title>
+    <style>
+        canvas { border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h2>Teorema de Nyquist - Demostración Visual</h2>
+    <label for="samplingRate">Tasa de muestreo (frames): 60 frames = 1 vuelta </label>
+    <select id="samplingRate" style="display: block;">
+        <option value="1">cada frame</option>
+        <option value="10">c/10 frames </option>
+        <option value="20" selected>c/20 frames</option>
+        <option value="30">c/30 frames (Tasa de Nyquist)</option>
+        <option value="50">c/50 frames</option>
+        <option value="60">c/60 frames</option>
+        <option value="70">c/70 frames</option>
+    </select>
+    <canvas id="canvas" width="800" height="400"></canvas>
+        <script src="app.js"></script>
+</body>
+</html>
